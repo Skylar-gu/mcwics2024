@@ -1,12 +1,20 @@
-import { Heading } from '@chakra-ui/react'
-import NewsLogo from '../assets/news_logo.png'
+import Logo from "./logo";
+import MenuButton from "./menu-button";
+import Search from "./search";
+import { Flex, Spacer } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 function Header() {
-    return (
-        <Heading><img src={NewsLogo} style={{ width: 141, marginLeft: 0, marginTop: 0 }}></img></Heading>
-    );
+  return (
+    <Flex p="5">
+      <Logo />
+      <Spacer />
+      <Search />
+      <Spacer />
+      <Box w="15px" />
+      <MenuButton />
+    </Flex>
+  );
 }
 
 export default Header;
-
-
