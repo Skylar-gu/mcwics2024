@@ -27,6 +27,7 @@ ReactDOM.createRoot(rootElement).render(
           >
             <GridItem pl="2" area={"header"}>
               <Header />
+              <SearchBody />
             </GridItem>
             
           </Grid>
