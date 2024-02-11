@@ -1,4 +1,5 @@
 from transformers import pipeline
+from articleProcessing import articles_list
 import os
 
 # Set the environment variable
@@ -6,7 +7,8 @@ os.environ['TOKENIZERS_PARALLELISM'] = 'false'
 
 classifier = pipeline(task="text-classification", model="SamLowe/roberta-base-go_emotions", top_k=None)
 
-sentences = ["I am not having a great day"]
+content1 = articles_list[0]["content"]
+sentences = [content1]
 
 model_outputs = classifier(sentences)
 emotion_outputs = model_outputs[0]
