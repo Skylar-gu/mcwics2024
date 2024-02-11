@@ -9,7 +9,7 @@ function Header() {
     <Flex p="5">
       <Logo />
       <Spacer />
-      <Search />
+      
       <Spacer />
       <Box w="15px" />
       <MenuButton />
